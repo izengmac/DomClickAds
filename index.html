@@ -24,12 +24,58 @@
             font-size: 1.5em;
             margin-bottom: 10px;
         }
+        #nav_1-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            
+        }
+        .nav_contact {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            width: 25%;
+            font-size: larger;
+           
+            
+        }
+        #call_button{
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.3s;
+            border-radius: 20px;
+        }
+        .logo p {
+            font-size: 30px;
+            font-weight: 400;
+        }
+
     </style>
 </head>
 <body>
 
     <header>
-        <h1>My Project</h1>
+        <div id="nav_1-container">
+            <div class="logo">
+                <p>ЖК Краснофлотская</p>
+            </div>
+            <div class="nav_contact">
+                <p>+7 (495) 363-16-40</p>
+                <button id="call_button">Заказать звонок</button>
+            </div>
+        </div>
+        <div id="nav_2-container">
+            <h1>OK</h1>
+        </div>
     </header>
 
     <main>
