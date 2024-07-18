@@ -14,31 +14,65 @@
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        padding: 10px;
-        color: #D4911F;
+        padding: 32px;
+        color: #d4911f;
       }
       section,
       footer {
         padding: 20px;
-        margin: 5px;
       }
       header,
       footer {
         background-color: #f4f4f4;
       }
 
+      main {
+        color: #fff;
+      }
+
       section {
         border: 1px solid #ddd;
       }
+      #section1 {
+        background-image: url("./img/__13-03-24_05-25-22_.jpg");
+        opacity: 1;
+        padding-top: 120px;
+        padding-left: 120px;
+        padding-bottom: 80px;
+      }
+      #section1 h1 {
+        font-size: 56px;
+      }
+
       .section-title {
         font-size: 1.5em;
         margin-bottom: 10px;
+      }
+
+      .section_1-price {
+        font-size: 32px;
+        font-weight: 700;
+        color: #d4911f;
+      }
+      .section_1_offprice{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .section_1_offprice p{
+        font-size: 28px;
+        font-weight: 700;
+        margin-bottom: 5px;
+        color: #d4911f;
+      }
+      .section_1-street{
+        margin-top: 32px;
       }
       #nav_1-container {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-       
       }
       .nav_contact {
         display: flex;
@@ -48,8 +82,8 @@
         width: 25%;
         font-size: larger;
       }
-      #call_button {
-        background-color: #D4911F;
+      #button {
+        background-color: #d4911f;
         color: white;
         padding: 10px 16px;
         border: none;
@@ -63,7 +97,7 @@
       }
       .logo p {
         font-size: 24px;
-        font-weight:600;
+        font-weight: 600;
       }
 
       .nav_2-container {
@@ -73,7 +107,7 @@
         align-items: center;
         width: 100%;
       }
-      .nav_3-container{
+      .nav_3-container {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -82,7 +116,7 @@
       }
       hr {
         width: 100%;
-        border-top: 1px solid #D4911F ;
+        border-top: 1px solid #d4911f;
       }
     </style>
   </head>
@@ -94,12 +128,12 @@
         </div>
         <div class="nav_contact">
           <p>+7 (495) 363-16-40</p>
-          <button id="call_button">Заказать звонок</button>
+          <button id="button">Заказать звонок</button>
         </div>
       </div>
 
       <div class="nav_2-container">
-        <hr>
+        <hr />
         <div class="nav_3-container">
           <div>О проекте</div>
           <div>Стоимость</div>
@@ -115,8 +149,19 @@
 
     <main>
       <section id="section1">
-        <div class="section-title">Section 1</div>
-        <p>Content for section 1...</p>
+        <div class="section-title">
+          <h1>ЖК Краснофлотская</h1>
+          <p>Квартиры от 3 605 000 рублей*</p>
+          <p class="section_1-price">
+            Квартиры в ипотеку ПСК от 5,3%-11,9% от 15 463 руб/мес
+          </p>
+        </div>
+        <div class="section_1_offprice">
+          <p>Скидка до 11% на все квартиры действует еще:</p>
+          <h1>13 Дней 14 Часов 38 Минут 53 Секунд</h1>
+          <button id="button">Заказать звонок</button>
+          <div class="section_1-street">г. Красноармейск, ул. Краснофлотская, д. 9а</div>
+        </div>
       </section>
 
       <section id="section2">
